@@ -1,0 +1,2 @@
+# Shell scripts must use LF so Linux hosts (Render, etc.) honor the shebang.
+*.sh text eol=lf

@@ -1,0 +1,11 @@
+# Render Blueprint: https://render.com/docs/blueprint-spec
+# After first deploy, add a Secret File "config.yml" or set CONFIG_PATH if you store config elsewhere.
+services:
+  - type: web
+    name: squintdesk
+    branch: main
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: bash bin/start_web.sh
+    healthCheckPath: /

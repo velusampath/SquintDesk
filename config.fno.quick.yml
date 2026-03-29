@@ -1,0 +1,42 @@
+market:
+  history_period: 6mo
+  interval: 1d
+
+symbols:
+  - SBIN
+  - ICICIBANK
+  - RELIANCE
+  - TCS
+  - INFY
+
+fno_symbols:
+  - SBIN
+  - ICICIBANK
+  - RELIANCE
+  - TCS
+  - INFY
+
+filters:
+  swing:
+    min_price: 100
+    min_traded_value: 100000000
+    min_volume_ratio: 1.5
+    rsi_min: 45
+    rsi_max: 75
+
+  long_term:
+    min_price: 100
+    min_traded_value: 100000000
+    max_pe: 35
+    min_roe: 0.15
+    max_debt_to_equity: 80
+    min_operating_cashflow: 1
+
+  fno:
+    min_price: 100
+    min_traded_value: 150000000
+    min_atr: 5
+    min_volume_ratio: 1.2
+    min_oi_change_pct: 2.0
+    require_oi_data: false
+
